@@ -1,9 +1,7 @@
-
 services:
   rag_app:
-    # build: .
-    image:  ghcr.io/peter-hanzo/open-rag-eval:sha256-bf9ebf5f289ac82c1dc9326d93b7cc77fcabf43fbeb5261aefc4a47b5cf0e37d
+    image: ghcr.io/peter-hanzo/open-rag-eval@sha256:bf9ebf5f289ac82c1dc9326d93b7cc77fcabf43fbeb5261aefc4a47b5cf0e37d
     container_name: rag_app
     ports:
-      - "5550:5000"  # Проброс порта 5000
+      - "5550:5000"
     restart: unless-stopped
